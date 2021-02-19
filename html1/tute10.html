@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float/ Clear</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding:40px 25px ;
+            margin: 5px 5px;
+
+        }
+        img{
+            /* image float toward left */
+          float: left; 
+          /* image float toward right side */
+          /* float: right; */
+/* image does not float  */
+          /* float: none; */
+          margin: 5px 5px ; 
+        }
+
+        /* none - Allows floating elements on both sides. This is default
+left - No floating elements allowed on the left side
+right- No floating elements allowed on the right side
+both - No floating elements allowed on either the left or the right side
+inherit - The element inherits the clear value of its parent */
+      .box1{
+          border: 2px solid red;
+      }  
+      #img1{
+          float: left;
+          /* float: right; */
+      }
+      #p1{
+          /* clear: left; */ 
+          /* clear: right; */
+          /* clear: both; */
+          clear: none;
+      }
+       
+        
+    </style>
+</head>
+<body>
+    <!-- flaot property -->
+    <div class="box">
+
+        <img src="/img/pexels-pixabay-461428.jpg" alt="Image" height="130px" width="150px">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto voluptate pariatur at maiores! Ex molestiae quidem culpa quo in tenetur aperiam? Corporis ducimus, maiores impedit sapiente perferendis non necessitatibus fugiat!</p>
+    </div>
+    <!-- clear property -->
+    <div class="box1">
+        <img src="/img/pexels-victor-freitas-2261477.jpg" alt="img" height="150" width="150" id="img1">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero debitis excepturi facere iusto voluptatum. Culpa itaque molestias inventore doloremque accusamus, autem illum repellendus harum modi, tempora beatae consectetur omnis. Quia.</p>
+    </div>
+    
+
+    <h1>Please minimize your browser for watching your page same as my page seen in video</h1>
+</body>
+</html>
