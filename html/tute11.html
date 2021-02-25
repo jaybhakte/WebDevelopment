@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMl Table</title>
+    <style>
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+th,td{
+    padding: 15px;
+}
+th,td{
+    /* text-align: left; */
+    /* text-align: right; */
+    text-align: center;
+}
+table{
+    border-spacing: 5px;
+}
+#demo{
+    background-color: blue;
+}
+#demo1{
+    background-color: red;
+}
+#demo2{
+    background-color: yellow;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Basic HTML Table</h2>
+    <table style="width:100%;" id="demo">
+<tr>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Age</th>
+</tr>
+<tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+</tr>
+<tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>26</td>
+</tr>
+
+<tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>27</td>
+</tr>
+    </table>
+    <hr>
+    <table style="width:100%" id="demo1">
+        <tr>
+          <th>Name</th>
+          <th colspan="3">Telephone</th>
+        </tr>
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+          <td>55577855</td>
+          <td>666352663</td>
+        </tr>
+      </table>
+<hr>
+      <table style="width:100%" id="demo2">
+        <caption>Monthly savings</caption>
+        <tr>
+          <th>Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>55577854</td>
+        </tr>
+        <tr>
+          <td>55577855</td>
+        </tr>
+      </table>
+</body>
+</html>
