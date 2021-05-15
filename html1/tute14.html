@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query example</title>
+  <style>
+    .wrapper {
+      overflow: auto;
+    }
+
+    #main {
+      margin-left: 4px;
+    }
+
+    #leftsidebar {
+      float: none;
+      width: auto;
+    }
+
+    #menulist {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menuitems {
+      background-color: pink;
+      color: black;
+      border: 2px solid green;
+      border-radius: 5px;
+      list-style: none;
+      margin: 4px;
+      padding: 4px;
+    }
+
+    @media screen and (min-width:600px) {
+      #leftsidebar {
+        float: left;
+        width: 200px;
+      }
+
+      #main {
+        margin-left: 216px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="leftsidebar">
+      <ul id="menulist">
+        <li class="menuitems"><img src="/img/pexels-victor-freitas-2261477.jpg" alt="" style="height: auto; width: 100%;"></li>
+        <li class="menuitems"><img src="/img/pexels-victor-freitas-2261477.jpg" alt="" style="height: auto; width: 100%;"></li>
+        <li class="menuitems">Soem text here</li>
+        <li class="menuitems">Soem text here</li>
+      </ul>
+    </div>
+    <div id="main">
+      <h1>CSS Media Query example</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima provident in maiores mollitia! Quam mollitia
+        recusandae dignissimos voluptatem repellendus illo provident ipsum repellat. Fugiat, eveniet magni perspiciatis
+        voluptatem vero debitis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, labore. Maxime
+        consequatur numquam laudantium? Voluptates, quaerat explicabo excepturi corporis harum possimus eaque a
+        reprehenderit, dolorem dicta porro quod illum culpa.</p>
+    </div>
+  </div>
+</body>
+
+</html>
